@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const { LocalStorage } = require("node-localstorage");
 const ld = require("lodash");
 const path = require("path");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const app = express();
 const localStorage = new LocalStorage(path.join(__dirname, "local-storage")); // Adjust the path to your desired local storage directory
